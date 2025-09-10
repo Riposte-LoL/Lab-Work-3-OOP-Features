@@ -71,6 +71,41 @@ public class Motorcycle extends Vehicle {
 }
 
 // ------------------------------------- This is for #4 Create one object for Motorcyle with initial values for brand, tires, and model. Do it also for Bicycle ------------------------------------------------------- //
+
+public class Bicycle extends Vehicle {
+ 
+    private String chainType;   
+    private String shifter;   
+ 
+ 
+    public Motorcycle(String brand, int tires, String model, String chainType, String shifter) {
+        super(brand, tires, model);  
+        this.chainType = chainType;
+        this.shifter = shifter;
+    }
+ 
+ 
+    public void setChainType(String chainType) {
+        this.chainType = chainType;
+    }
+ 
+ 
+    public String getChainType() {
+        return chainType;
+    }
+ 
+ 
+    public void setShifter(String shifter) {
+        this.shifter = shifter;
+    }
+ 
+ 
+    public String getShifter() {
+        return shifter;
+    }
+}
+
 // ------------------------------------- This is for #5 Each object should use all its own methods and ALL the methods of its base class (Vehicle) ------------------------------------------------------- //
 // ------------------------------------- This is for #6 For the Motorcycle object it should output its brand, tires, model, engineType, and fuelSystem ------------------------------------------------------- //
 // ------------------------------------- This is for #7 For the Bicycle object it should output its brand, tires, model, chainType, and shifter ------------------------------------------------------- //
+
