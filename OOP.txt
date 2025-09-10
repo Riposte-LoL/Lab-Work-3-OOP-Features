@@ -1,0 +1,76 @@
+// ------------------------------------- This is for #1 Class Vehicle as the base class that contains: a. b. c. d. ------------------------------------------------------- //
+class Vehicle {
+
+    // a. The variables brand, tires, and model that are common to the derived classes
+    private String brand;
+    private int tires;
+    private String model;
+
+
+    // b. A constructor that initializes the variables using its parameters
+    public Vehicle(String brand, int tires, String model) {
+        this.brand = brand;
+        this.tires = tires;
+        this.model = model; }
+
+
+    // c. Setter methods that set the values of the variables
+    public void setBrand(String brand) {
+        this.brand = brand; }
+
+    public void setTires(int tires) {
+        this.tires = tires; }
+
+    public void setModel(String model) {
+        this.model = model; }
+
+
+    // d. Getter methods that return the values of the variables
+    public String getBrand() {
+        return brand; }
+
+    public int getTires() {
+        return tires; }
+
+    public String getModel() {
+        return model; }
+}
+
+
+// ------------------------------------- This is for #2 Class Motorcyle that inherits from Vehicle------------------------------------------------------- //
+
+public class Motorcycle extends Vehicle {
+    
+    private String engineType;   
+    private String fuelSystem;   
+
+    
+    public Motorcycle(String brand, int tires, String model) {
+        super(brand, tires, model);  
+    }
+
+    
+    public void setEngineType(String engineType) {
+        this.engineType = engineType;
+    }
+
+    
+    public String getEngineType() {
+        return engineType;
+    }
+
+    
+    public void setFuelSystem(String fuelSystem) {
+        this.fuelSystem = fuelSystem;
+    }
+
+    
+    public String getFuelSystem() {
+        return fuelSystem;
+    }
+}
+
+// ------------------------------------- This is for #4 Create one object for Motorcyle with initial values for brand, tires, and model. Do it also for Bicycle ------------------------------------------------------- //
+// ------------------------------------- This is for #5 Each object should use all its own methods and ALL the methods of its base class (Vehicle) ------------------------------------------------------- //
+// ------------------------------------- This is for #6 For the Motorcycle object it should output its brand, tires, model, engineType, and fuelSystem ------------------------------------------------------- //
+// ------------------------------------- This is for #7 For the Bicycle object it should output its brand, tires, model, chainType, and shifter ------------------------------------------------------- //
